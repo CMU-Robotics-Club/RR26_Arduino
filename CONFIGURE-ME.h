@@ -7,7 +7,7 @@ const uint8_t TEAM_NUMBER = 62;
 /* Edit this string to include your team name! When you connect your robot to the Bluetooth
  * controller app, the name that will show up is "RR-[TEAM_NUMBER]-[TEAM_NAME]"
 
-   MAX 15 CHARACTERS
+   Will be truncated after 15 characters
 */
 const char *TEAM_NAME = "samplebot";
 

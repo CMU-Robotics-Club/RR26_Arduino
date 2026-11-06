@@ -26,7 +26,7 @@ extern void ParseBluetoothCommands(char *buf, size_t len);
 
 namespace {
 volatile bool deviceConnected = false;
-char gDeviceName[6 + sizeof(TEAM_NAME)]; // sus buffer size allocation
+char gDeviceName[22]; // 6 header + up to 15 team name + \0 
 
 class ServerCallbacks : public NimBLEServerCallbacks {
   void onConnect(NimBLEServer *pServer, NimBLEConnInfo &connInfo) override {
