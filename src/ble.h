@@ -94,6 +94,9 @@ void init() {
   pinMode(RADIO_LED, OUTPUT);
   digitalWrite(RADIO_LED, LOW);
 
+  while (TEAM_NUMBER == 0) Serial.println("[BLE] Error: set TEAM_NUMBER!");
+  while (TEAM_NAME[0] == '\0') Serial.println("[BLE] Error: set TEAM_NAME!");
+
   snprintf(gDeviceName, sizeof(gDeviceName), "RR-%02u-%s", TEAM_NUMBER, TEAM_NAME);
 
   NimBLEDevice::init(gDeviceName);

@@ -2,14 +2,14 @@
 
 /* Edit this integer to be equal to your team number.
 */
-const uint8_t TEAM_NUMBER = 0;
+const uint8_t TEAM_NUMBER = 62;
 
 /* Edit this string to include your team name! When you connect your robot to the Bluetooth
  * controller app, the name that will show up is "RR-[TEAM_NUMBER]-[TEAM_NAME]"
 
    MAX 15 CHARACTERS
 */
-const char *TEAM_NAME = "red robotics";
+const char *TEAM_NAME = "samplebot";
 
 /* Uncomment this to receive more verbose debug packets over serial.
    e.g. when motor 2 is driven, you may see
