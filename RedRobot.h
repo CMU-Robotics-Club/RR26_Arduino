@@ -69,7 +69,7 @@ namespace RR_Controller {
     DOWN = 1, 
     LEFT = 2, 
     RIGHT = 3,
-    CENTER = 3
+    CENTER = 4
   };
 
   void ButtonX_Pressed(bool buttonPressedDown);
